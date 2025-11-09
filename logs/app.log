@@ -1,0 +1,26 @@
+2025-11-08 22:08:01,881 - SoundBot - INFO - AIService initialized with model llama-3.1-8b-instant
+2025-11-08 22:08:01,882 - SoundBot - INFO - Connected to Spotify
+2025-11-08 22:08:01,939 - SoundBot - INFO - SoundBot API started
+2025-11-08 22:08:12,092 - SoundBot - INFO - New chat request from 127.0.0.1 | user_id=teste123 | message='Preciso de musicas tristes'
+2025-11-08 22:08:12,093 - SoundBot - INFO - Processing message from user teste123: 'Preciso de musicas tristes'
+2025-11-08 22:08:12,093 - SoundBot - INFO - Interpreting user request: 'Preciso de musicas tristes'
+2025-11-08 22:08:12,557 - SoundBot - INFO - Successfully interpreted request: {'acao': 'recomendar', 'humor': 'triste'}
+2025-11-08 22:08:12,557 - SoundBot - INFO - Interpreted intent: {'acao': 'recomendar', 'humor': 'triste'}
+2025-11-08 22:08:12,558 - SoundBot - INFO - Recommending songs for mood: 'triste'
+2025-11-08 22:08:17,592 - SoundBot - INFO - Recommended tracks for mood 'triste': ['back to friends - sombr', "i hate u, i love u (feat. olivia o'brien) - gnash", 'WILDFLOWER - Billie Eilish', "I Love You, I'm Sorry - Gracie Abrams", 'Heather - Conan Gray']
+2025-11-08 22:08:17,595 - SoundBot - INFO - Context updated for user teste123
+2025-11-08 22:08:17,595 - SoundBot - INFO - Chat response for user teste123: Essas músicas combinam com um humor triste:
+2025-11-08 22:11:18,727 - SoundBot - INFO - AIService initialized with model llama-3.1-8b-instant
+2025-11-08 22:11:18,727 - SoundBot - INFO - Connected to Spotify
+2025-11-08 22:11:20,037 - SoundBot - INFO - AIService initialized with model llama-3.1-8b-instant
+2025-11-08 22:11:20,038 - SoundBot - INFO - Connected to Spotify
+2025-11-08 22:11:20,082 - SoundBot - INFO - 🚀 SoundBot API started successfully
+2025-11-08 22:11:30,918 - SoundBot - INFO - New chat request from 127.0.0.1 | user_id=teste123 | message='Preciso de musicas tristes'
+2025-11-08 22:11:30,919 - SoundBot - INFO - Processing message from user teste123: 'Preciso de musicas tristes'
+2025-11-08 22:11:30,919 - SoundBot - INFO - Interpreting user request: 'Preciso de musicas tristes'
+2025-11-08 22:11:31,260 - SoundBot - INFO - Successfully interpreted request: {'acao': 'recomendar', 'humor': 'triste', 'musica': None}
+2025-11-08 22:11:31,260 - SoundBot - INFO - Interpreted intent: {'acao': 'recomendar', 'humor': 'triste', 'musica': None}
+2025-11-08 22:11:31,260 - SoundBot - INFO - Recommending songs for mood: 'triste'
+2025-11-08 22:11:36,240 - SoundBot - INFO - Recommended tracks for mood 'triste': ['back to friends - sombr', "i hate u, i love u (feat. olivia o'brien) - gnash", 'WILDFLOWER - Billie Eilish', "I Love You, I'm Sorry - Gracie Abrams", 'Heather - Conan Gray']
+2025-11-08 22:11:36,247 - SoundBot - INFO - Context updated for user teste123
+2025-11-08 22:11:36,247 - SoundBot - INFO - Chat response for user teste123: Essas músicas combinam com um humor triste:

@@ -1,7 +1,7 @@
 import pytest
 from src.services.spotify_service import SpotifyService
 
-@pytest.fixture
+@pytest.fixture(scope="module")
 def spotify():
     return SpotifyService()
 
