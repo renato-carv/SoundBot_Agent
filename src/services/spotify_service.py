@@ -45,37 +45,46 @@ class SpotifyService:
     @require_connection(attr_name="sp", service_name="Spotify")
     def recommend_by_mood(self, mood: str, limit: int = 5):
         mood_map = {
-            "feliz": "good vibes",  
-            "triste": "sad",  
-            "animado": "funk",  
-            "calmo": "ambient",  
-            "romântico": "jazz",  
-            "energético": "rock",  
-            "nostálgico": "90s hits",  
-            "festa": "edm", 
-            "focado": "lofi",  
-            "pagode": "pagode",  
-            "sertanejo": "sertanejo hits",  
-            "bossa_nova": "bossa nova",  
-            "samba": "samba",  
-            "axé": "axé",  
+            "feliz": "good vibes",
+            "triste": "sad",
+            "animado": "funk",
+            "calmo": "ambient",
+            "romântico": "jazz",
+            "energético": "rock",
+            "nostálgico": "90s hits",
+            "festa": "edm",
+            "focado": "lofi",
+            "pagode": "pagode",
+            "sertanejo": "sertanejo hits",
+            "bossa_nova": "bossa nova",
+            "samba": "samba",
+            "axé": "axé",
             "mpb": "mpb",
-            "eletrônico": "electronic",  
-            "hip_hop": "hip-hop",  
-            "reggae": "reggae",  
-            "forró": "forró",  
+            "eletrônico": "electronic",
+            "hip_hop": "hip-hop",
+            "reggae": "reggae",
+            "forró": "forró",
             "trap": "trap",
         }
 
         genre_or_keyword = mood_map.get(mood.lower(), "pop")
+        tracks = []
 
         try:
-            search_result = self.sp.search(q=genre_or_keyword, type="playlist", limit=3)
+            search_result = self.sp.search(q=genre_or_keyword, type="playlist", limit=10)
             playlists = search_result.get("playlists", {}).get("items", [])
-            if not playlists:
-                print(f"No playlists found for genre `{genre_or_keyword}`")
-                return ["No playlists found"]
-            tracks = []
+
+            playlists_with_followers = []
+            for pl in playlists:
+                try:
+                    details = self.sp.playlist(pl["id"])
+                    followers = details.get("followers", {}).get("total", 0)
+                    playlists_with_followers.append((pl, followers))
+                except Exception:
+                    continue
+
+            playlists_with_followers.sort(key=lambda x: x[1], reverse=True)
+            playlists = [pl for pl, _ in playlists_with_followers]
 
             for pl in playlists:
                 pl_items_result = self.sp.playlist_items(pl["id"], limit=limit)
@@ -86,29 +95,31 @@ class SpotifyService:
                         tracks.append(f"{t['name']} - {t['artists'][0]['name']}")
                 if len(tracks) >= limit:
                     break
-
-            if len(tracks) < limit:
-                search_artists = self.sp.search(
-                    q=genre_or_keyword, type="artist", limit=1
-                )
-                artists = search_artists.get("artists", {}).get("items", [])
-                if artists:
-                    artist_id = artists[0]["id"]
-                    top_tracks_result = self.sp.artist_top_tracks(artist_id)
-                    top_tracks = top_tracks_result.get("tracks", [])[
-                        : limit - len(tracks)
-                    ]
-                    tracks.extend(
-                        [f"{t['name']} - {t['artists'][0]['name']}" for t in top_tracks]
-                    )
-
-            if not tracks:
-                return ["No tracks found"]
-            return tracks[:limit]
-
         except Exception as e:
-            print(f"Failed to recommend tracks for mood '{mood}': {e}")
-            return ["Failed to recommend tracks"]
+            print(f"Erro ao buscar playlists para '{genre_or_keyword}': {e}")
+
+        if len(tracks) < limit:
+            try:
+                search_artists = self.sp.search(q=genre_or_keyword, type="artist", limit=5)
+                artists = search_artists.get("artists", {}).get("items", [])
+                for artist in artists:
+                    top_tracks_result = self.sp.artist_top_tracks(artist["id"])
+                    top_tracks = top_tracks_result.get("tracks", [])[:limit - len(tracks)]
+                    tracks.extend([f"{t['name']} - {t['artists'][0]['name']}" for t in top_tracks])
+                    if len(tracks) >= limit:
+                        break
+            except Exception as e:
+                print(f"Erro ao buscar artistas para '{genre_or_keyword}': {e}")
+
+        if len(tracks) < limit:
+            try:
+                search_tracks = self.sp.search(q=genre_or_keyword, type="track", limit=limit - len(tracks))
+                tracks.extend([f"{t['name']} - {t['artists'][0]['name']}" for t in search_tracks.get("tracks", {}).get("items", [])])
+            except Exception as e:
+                print(f"Erro ao buscar tracks para '{genre_or_keyword}': {e}")
+
+        return tracks[:limit] if tracks else ["No tracks found"]
+
 
     @require_connection(attr_name="sp", service_name="Spotify")
     def get_track_preview(self, track_name: str):
