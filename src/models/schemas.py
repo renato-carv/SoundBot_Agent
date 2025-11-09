@@ -8,4 +8,5 @@ class ChatRequest(BaseModel):
 class ChatResponse(BaseModel):
     reply: str
     mood: Optional[str] = None
+    genre: Optional[str] = None
     recommendations: Optional[List[str]] = None

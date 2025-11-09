@@ -18,6 +18,7 @@ class ChatController:
 
         action = intent.get("acao")
         mood = intent.get("humor")
+        genre = intent.get("genero")
         artist = intent.get("artista")
         song = intent.get("musica")
 
@@ -25,23 +26,32 @@ class ChatController:
         reply = ""
 
         try:
+            # Recupera histórico de recomendações
+            previous_recs = memory_manager.get_previous_recommendations(user_id)
+
             if action == "buscar_musica" and song:
-                logger.info(f"Searching for track: '{song}'")
-                recommendations = spotify_service.search_track(song) or []
+                recommendations = spotify_service.search_track(song)
                 context = f"O usuário pediu para buscar a música '{song}'."
-            
+
             elif action == "buscar_artista" and artist:
-                logger.info(f"Searching for artist: '{artist}'")
-                recommendations = spotify_service.search_track(f"artist:{artist}") or []
+                recommendations = spotify_service.search_track(f"artist:{artist}")
                 context = f"O usuário pediu para ver músicas do artista '{artist}'."
 
-            elif action == "recomendar" and mood:
-                logger.info(f"Recommending songs for mood: '{mood}'")
-                recommendations = spotify_service.recommend_by_mood(mood) or []
-                context = f"O usuário quer recomendações de músicas para um humor {mood}."
+            elif action == "recomendar":
+                recommendations = spotify_service.recommend_by_mood_or_genre(
+                    mood=mood,
+                    genre=genre,
+                    limit=5,
+                    exclude=previous_recs
+                )
+                if genre:
+                    context = f"O usuário quer recomendações de músicas do gênero '{genre}'."
+                elif mood:
+                    context = f"O usuário quer recomendações de músicas para um humor {mood}."
+                else:
+                    context = "O usuário quer recomendações de músicas."
 
             else:
-                logger.warning(f"Unrecognized request intent for message: '{message}'")
                 context = "O pedido do usuário não foi claramente compreendido."
 
             reply = ai_service.generate_reply(context, recommendations, mood, artist, song)
@@ -51,7 +61,8 @@ class ChatController:
             reply = "Desculpe, houve um problema ao buscar suas recomendações."
             recommendations = []
 
-        memory_manager.append_context(user_id, message, reply)
+        # Armazena mensagem, reply e recommendations no Redis
+        memory_manager.append_context(user_id, message, reply, recommendations)
         logger.info(f"Context updated for user {user_id}")
 
-        return ChatResponse(reply=reply, mood=mood, recommendations=recommendations)
+        return ChatResponse(reply=reply, mood=mood, genre=genre, recommendations=recommendations)

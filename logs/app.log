@@ -104,3 +104,233 @@ Eu espero que essas sugestões sejam úteis para você! Lembre-se de que a músi
 2025-11-08 22:38:47,935 - SoundBot - INFO - Recommended tracks for mood 'triste': ['back to friends - sombr', "i hate u, i love u (feat. olivia o'brien) - gnash", 'WILDFLOWER - Billie Eilish', "I Love You, I'm Sorry - Gracie Abrams", 'Heather - Conan Gray']
 2025-11-08 22:38:48,335 - SoundBot - INFO - AI formatted reply: {'reply': 'Acho que essas músicas combinam com seu humor! Elas têm uma energia que pode ajudar a aliviar a tristeza e trazer um pouco de conforto.', 'mood': 'triste', 'recommendations': ['Back to Friends - Sombr', "I Hate U, I Love U (feat. Olivia O'Brien) - Gnash", 'WILDFLOWER - Billie Eilish', "I Love You, I'm Sorry - Gracie Abrams", 'Heather - Conan Gray']}
 2025-11-08 22:38:48,339 - SoundBot - INFO - Context updated for user teste123
+2025-11-09 00:53:56,851 - SoundBot - INFO - AIService initialized with model llama-3.1-8b-instant
+2025-11-09 00:53:56,854 - SoundBot - INFO - Connected to Spotify
+2025-11-09 00:53:58,658 - SoundBot - INFO - AIService initialized with model llama-3.1-8b-instant
+2025-11-09 00:53:58,658 - SoundBot - INFO - Connected to Spotify
+2025-11-09 00:53:58,718 - SoundBot - INFO - SoundBot API started successfully
+2025-11-09 00:54:23,000 - SoundBot - INFO - New chat request from 127.0.0.1 | user_id=teste123 | message='Gostaria de musicas de pagode'
+2025-11-09 00:54:23,000 - SoundBot - INFO - Processing message from user teste123: 'Gostaria de musicas de pagode'
+2025-11-09 00:54:23,001 - SoundBot - INFO - Interpreting user request: 'Gostaria de musicas de pagode'
+2025-11-09 00:54:23,675 - SoundBot - INFO - Successfully interpreted request: {'acao': 'recomendar', 'humor': 'festa', 'artista': 'sandro mussan', 'musica': 'o melhor do pagode'}
+2025-11-09 00:54:23,675 - SoundBot - INFO - Interpreted intent: {'acao': 'recomendar', 'humor': 'festa', 'artista': 'sandro mussan', 'musica': 'o melhor do pagode'}
+2025-11-09 00:54:23,675 - SoundBot - INFO - Recommending songs for mood: 'festa'
+2025-11-09 00:54:28,472 - SoundBot - INFO - Recommended tracks for mood 'festa': ["I'm Good (Blue) - David Guetta", 'Thank You (Not So Bad) - Dimitri Vegas & Like Mike', 'Love Tonight (David Guetta Remix Edit) - Shouse', 'Be My Lover (feat. La Bouche) - 2023 Mix - Hypaton', 'Silence - John Summit Remix - Delerium']
+2025-11-09 00:54:28,832 - SoundBot - WARNING - LLM did not return JSON. Raw: {
+"reply": "Acho que essas músicas são ideais para animar a festa! Vamos dançar o dia inteiro!",
+"mood": "festa",
+"recommendations": ["I'm Good (Blue) - David Guetta", 'Thank You (Not So Bad) - Dimitri Vegas & Like Mike', 'Love Tonight (David Guetta Remix Edit) - Shouse', 'Be My Lover (feat. La Bouche) - 2023 Mix - Hypaton', 'Silence - John Summit Remix - Delerium']
+}
+2025-11-09 00:54:28,838 - SoundBot - INFO - Context updated for user teste123
+2025-11-09 00:54:43,497 - SoundBot - INFO - New chat request from 127.0.0.1 | user_id=teste123 | message='Gostaria de musicas de rock'
+2025-11-09 00:54:43,497 - SoundBot - INFO - Processing message from user teste123: 'Gostaria de musicas de rock'
+2025-11-09 00:54:43,497 - SoundBot - INFO - Interpreting user request: 'Gostaria de musicas de rock'
+2025-11-09 00:54:43,782 - SoundBot - INFO - Successfully interpreted request: {'acao': 'recomendar', 'humor': None, 'artista': None, 'musica': None}
+2025-11-09 00:54:43,782 - SoundBot - INFO - Interpreted intent: {'acao': 'recomendar', 'humor': None, 'artista': None, 'musica': None}
+2025-11-09 00:54:43,782 - SoundBot - WARNING - Unrecognized request intent for message: 'Gostaria de musicas de rock'
+2025-11-09 00:54:44,069 - SoundBot - INFO - AI formatted reply: {'reply': 'Desculpe, mas não entendi direito o que você gostaria de ouvir. Pode me dar mais informações para eu te ajudar melhor?', 'mood': None, 'recommendations': []}
+2025-11-09 00:54:44,072 - SoundBot - INFO - Context updated for user teste123
+2025-11-09 00:54:51,427 - SoundBot - INFO - New chat request from 127.0.0.1 | user_id=teste123 | message='Gostaria de musicas felizes'
+2025-11-09 00:54:51,427 - SoundBot - INFO - Processing message from user teste123: 'Gostaria de musicas felizes'
+2025-11-09 00:54:51,427 - SoundBot - INFO - Interpreting user request: 'Gostaria de musicas felizes'
+2025-11-09 00:54:51,706 - SoundBot - INFO - Successfully interpreted request: {'acao': 'recomendar', 'humor': 'feliz'}
+2025-11-09 00:54:51,706 - SoundBot - INFO - Interpreted intent: {'acao': 'recomendar', 'humor': 'feliz'}
+2025-11-09 00:54:51,706 - SoundBot - INFO - Recommending songs for mood: 'feliz'
+2025-11-09 00:54:58,861 - SoundBot - INFO - Recommended tracks for mood 'feliz': ['Riptide - Vance Joy', 'Ordinary - Alex Warren', 'ily (i love you baby) (feat. Emilee) - Surf Mesa', 'Supergirl - Dream Chaos', 'DAISIES - Justin Bieber']
+2025-11-09 00:54:59,216 - SoundBot - INFO - AI formatted reply: {'reply': 'Acho que essas músicas combinam com seu humor! Você pode se sentir ao sabor da vida com essas escolhas.', 'mood': 'feliz', 'recommendations': ['Riptide - Vance Joy', 'Ordinary - Alex Warren', 'ily (i love you baby) (feat. Emilee) - Surf Mesa', 'Supergirl - Dream Chaos', 'DAISIES - Justin Bieber']}
+2025-11-09 00:54:59,218 - SoundBot - INFO - Context updated for user teste123
+2025-11-09 00:55:23,577 - SoundBot - INFO - New chat request from 127.0.0.1 | user_id=teste123 | message='Preciso de musicas para estudar'
+2025-11-09 00:55:23,577 - SoundBot - INFO - Processing message from user teste123: 'Preciso de musicas para estudar'
+2025-11-09 00:55:23,577 - SoundBot - INFO - Interpreting user request: 'Preciso de musicas para estudar'
+2025-11-09 00:55:23,896 - SoundBot - INFO - Successfully interpreted request: {'acao': 'buscar_musica', 'humor': None, 'artista': None, 'musica': 'Músicas para estudar: \n\n- \n\n- \n\n- \n\n- \n\n- \n\n- \n\n- \n\n- '}
+2025-11-09 00:55:23,896 - SoundBot - INFO - Interpreted intent: {'acao': 'buscar_musica', 'humor': None, 'artista': None, 'musica': 'Músicas para estudar: \n\n- \n\n- \n\n- \n\n- \n\n- \n\n- \n\n- \n\n- '}
+2025-11-09 00:55:23,897 - SoundBot - INFO - Searching for track: 'Músicas para estudar: 
+
+- 
+
+- 
+
+- 
+
+- 
+
+- 
+
+- 
+
+- 
+
+- '
+2025-11-09 00:55:24,881 - SoundBot - INFO - AI formatted reply: {'reply': 'Acho que essas músicas combinam com seu estilo de estudo! Vou sugerir algumas opções para ajudá-lo a se concentrar.', 'mood': None, 'recommendations': ['VL Du Ramaiz - Trilha Sonora do Gueto', 'Gangue da Nike - L1l Eddy', 'Praticamente Destinado - Dji Tafinha', 'Musicas para relaxar e estudar - Estudam muito', 'Estudar Sozinho - Concentração Profunda', 'Concentração: Sons do Bosque, Pt. 01 - Musicas para Estudar Collective', 'Técnicas de Estudo - Concentração Profunda', 'Estudar para Produzir - Concentração Profunda', 'Estudar: Sons de Tempestade, Pt. 01 - Musicas para Estudar Collective', 'Estudar: Sons de Tempestade, Pt. 02 - Musicas para Estudar Collective']}
+2025-11-09 00:55:24,885 - SoundBot - INFO - Context updated for user teste123
+2025-11-09 00:56:35,401 - SoundBot - INFO - New chat request from 127.0.0.1 | user_id=teste123 | message='Preciso de musicas para estudar, estar focado'
+2025-11-09 00:56:35,402 - SoundBot - INFO - Processing message from user teste123: 'Preciso de musicas para estudar, estar focado'
+2025-11-09 00:56:35,402 - SoundBot - INFO - Interpreting user request: 'Preciso de musicas para estudar, estar focado'
+2025-11-09 00:56:35,709 - SoundBot - INFO - Successfully interpreted request: {'acao': 'recomendar', 'humor': 'focado', 'artista': None, 'musica': 'null'}
+2025-11-09 00:56:35,710 - SoundBot - INFO - Interpreted intent: {'acao': 'recomendar', 'humor': 'focado', 'artista': None, 'musica': 'null'}
+2025-11-09 00:56:35,710 - SoundBot - INFO - Recommending songs for mood: 'focado'
+2025-11-09 00:56:40,384 - SoundBot - INFO - Recommended tracks for mood 'focado': ['Hidden World - Simon Groß', 'Conkers - Nogymx', 'A Walk Through the Sky - Kainbeats', 'Riverbanks - Team Astro', 'Blank Canvas - BluntOne']
+2025-11-09 00:56:40,713 - SoundBot - INFO - AI formatted reply: {'reply': 'Acho que essas músicas combinam com seu humor! Você provavelmente vai se sentir motivado e inspirado com essas recomendações.', 'mood': 'focado', 'recommendations': ['Hidden World - Simon Groß', 'Conkers - Nogymx', 'A Walk Through the Sky - Kainbeats', 'Riverbanks - Team Astro', 'Blank Canvas - BluntOne']}
+2025-11-09 00:56:40,718 - SoundBot - INFO - Context updated for user teste123
+2025-11-09 00:57:00,197 - SoundBot - INFO - New chat request from 127.0.0.1 | user_id=teste123 | message='Preciso de musicas para estudar e que possam me concentrar'
+2025-11-09 00:57:00,197 - SoundBot - INFO - Processing message from user teste123: 'Preciso de musicas para estudar e que possam me concentrar'
+2025-11-09 00:57:00,198 - SoundBot - INFO - Interpreting user request: 'Preciso de musicas para estudar e que possam me concentrar'
+2025-11-09 00:57:00,473 - SoundBot - INFO - Successfully interpreted request: {'acao': 'recomendar', 'humor': 'focado', 'artista': None, 'musica': None}
+2025-11-09 00:57:00,473 - SoundBot - INFO - Interpreted intent: {'acao': 'recomendar', 'humor': 'focado', 'artista': None, 'musica': None}
+2025-11-09 00:57:00,473 - SoundBot - INFO - Recommending songs for mood: 'focado'
+2025-11-09 00:57:04,877 - SoundBot - INFO - Recommended tracks for mood 'focado': ['Hidden World - Simon Groß', 'Conkers - Nogymx', 'A Walk Through the Sky - Kainbeats', 'Riverbanks - Team Astro', 'Blank Canvas - BluntOne']
+2025-11-09 00:57:05,220 - SoundBot - INFO - AI formatted reply: {'reply': 'Acho que essas músicas combinam com seu humor focado! Você vai adorar a mistura de ritmos e melodias que essas faixas trazem.', 'mood': 'focado', 'recommendations': ['Hidden World - Simon Groß', 'Conkers - Nogymx', 'A Walk Through the Sky - Kainbeats', 'Riverbanks - Team Astro', 'Blank Canvas - BluntOne']}
+2025-11-09 00:57:05,224 - SoundBot - INFO - Context updated for user teste123
+2025-11-09 00:58:11,338 - SoundBot - INFO - New chat request from 127.0.0.1 | user_id=teste123 | message='Me recomenda uns pagodes ai'
+2025-11-09 00:58:11,339 - SoundBot - INFO - Processing message from user teste123: 'Me recomenda uns pagodes ai'
+2025-11-09 00:58:11,339 - SoundBot - INFO - Interpreting user request: 'Me recomenda uns pagodes ai'
+2025-11-09 00:58:11,653 - SoundBot - INFO - Successfully interpreted request: {'acao': 'recomendar', 'humor': 'animado', 'artista': 'Grupo Fundo de Quintal', 'musica': 'Pagode'}
+2025-11-09 00:58:11,654 - SoundBot - INFO - Interpreted intent: {'acao': 'recomendar', 'humor': 'animado', 'artista': 'Grupo Fundo de Quintal', 'musica': 'Pagode'}
+2025-11-09 00:58:11,654 - SoundBot - INFO - Recommending songs for mood: 'animado'
+2025-11-09 00:58:17,517 - SoundBot - INFO - Recommended tracks for mood 'animado': ['ME POSTOU NO DAILY - FESTA DO BIG G - MC GP', 'Posso Até Não Te Dar Flores - DJ Japa NK', 'FAMOSINHA - Dj Caio Vieira', 'Tô na Brasilia com o Zigão - DJ Zigão', 'Esquadrilha da Fumaça - Mc Jacaré']
+2025-11-09 00:58:17,893 - SoundBot - INFO - AI formatted reply: {'reply': 'Acho que essas músicas combinam com seu humor! Vamos dançar e se divertir!', 'mood': 'animado', 'recommendations': ['ME POSTOU NO DAILY - FESTA DO BIG G - MC GP', 'Posso Até Não Te Dar Flores - DJ Japa NK', 'FAMOSINHA - Dj Caio Vieira', 'Tô na Brasilia com o Zigão - DJ Zigão', 'Esquadrilha da Fumaça - Mc Jacaré']}
+2025-11-09 00:58:17,896 - SoundBot - INFO - Context updated for user teste123
+2025-11-09 01:02:57,606 - SoundBot - INFO - AIService initialized with model llama-3.1-8b-instant
+2025-11-09 01:02:57,606 - SoundBot - INFO - Connected to Spotify
+2025-11-09 01:02:57,649 - SoundBot - INFO - SoundBot API started successfully
+2025-11-09 01:05:40,174 - SoundBot - INFO - AIService initialized with model llama-3.1-8b-instant
+2025-11-09 01:05:40,174 - SoundBot - INFO - Connected to Spotify
+2025-11-09 01:05:40,229 - SoundBot - INFO - SoundBot API started successfully
+2025-11-09 01:05:56,036 - SoundBot - INFO - AIService initialized with model llama-3.1-8b-instant
+2025-11-09 01:05:56,036 - SoundBot - INFO - Connected to Spotify
+2025-11-09 01:05:56,080 - SoundBot - INFO - SoundBot API started successfully
+2025-11-09 01:06:01,812 - SoundBot - INFO - AIService initialized with model llama-3.1-8b-instant
+2025-11-09 01:06:01,813 - SoundBot - INFO - Connected to Spotify
+2025-11-09 01:06:01,855 - SoundBot - INFO - SoundBot API started successfully
+2025-11-09 01:06:03,580 - SoundBot - INFO - AIService initialized with model llama-3.1-8b-instant
+2025-11-09 01:06:03,580 - SoundBot - INFO - Connected to Spotify
+2025-11-09 01:06:03,621 - SoundBot - INFO - SoundBot API started successfully
+2025-11-09 01:06:45,383 - SoundBot - INFO - AIService initialized with model llama-3.1-8b-instant
+2025-11-09 01:06:45,384 - SoundBot - INFO - Connected to Spotify
+2025-11-09 01:06:45,433 - SoundBot - INFO - SoundBot API started successfully
+2025-11-09 01:07:48,337 - SoundBot - INFO - New chat request from 127.0.0.1 | user_id=teste123 | message='Me recomenda uns pagodes ai'
+2025-11-09 01:07:48,337 - SoundBot - INFO - Processing message from user teste123: 'Me recomenda uns pagodes ai'
+2025-11-09 01:07:48,337 - SoundBot - INFO - Interpreting user request: 'Me recomenda uns pagodes ai'
+2025-11-09 01:07:48,790 - SoundBot - INFO - Successfully interpreted request: {'acao': 'recomendar', 'humor': 'festa', 'genero': 'samba', 'artista': 'Cordel do Fogo Encantado', 'musica': ' Pagode de Festa'}
+2025-11-09 01:07:48,791 - SoundBot - INFO - Interpreted intent: {'acao': 'recomendar', 'humor': 'festa', 'genero': 'samba', 'artista': 'Cordel do Fogo Encantado', 'musica': ' Pagode de Festa'}
+2025-11-09 01:07:48,791 - SoundBot - INFO - Recommending songs for mood: 'festa' or genre: 'samba'
+2025-11-09 01:07:55,430 - SoundBot - INFO - Recommended tracks for 'samba': ['Poderosa - Ao Vivo - Thiaguinho', 'Lancinho - Ao Vivo - Turma do Pagode', 'P do Pecado - Ao Vivo - Grupo Menos É Mais', 'Reinventar / Pra Ver o Sol Brilhar - Ao Vivo - Belo', 'Tá Vendo Aquela Lua - Exaltasamba']
+2025-11-09 01:07:55,808 - SoundBot - INFO - Context updated for user teste123
+2025-11-09 01:09:31,414 - SoundBot - INFO - New chat request from 127.0.0.1 | user_id=teste123 | message='Me recomenda uns funks ai'
+2025-11-09 01:09:31,414 - SoundBot - INFO - Processing message from user teste123: 'Me recomenda uns funks ai'
+2025-11-09 01:09:31,414 - SoundBot - INFO - Interpreting user request: 'Me recomenda uns funks ai'
+2025-11-09 01:09:31,740 - SoundBot - INFO - Successfully interpreted request: {'acao': 'recomendar', 'humor': 'festa', 'genero': 'funk', 'artista': None, 'musica': None}
+2025-11-09 01:09:31,740 - SoundBot - INFO - Interpreted intent: {'acao': 'recomendar', 'humor': 'festa', 'genero': 'funk', 'artista': None, 'musica': None}
+2025-11-09 01:09:31,740 - SoundBot - INFO - Recommending songs for mood: 'festa' or genre: 'funk'
+2025-11-09 01:09:37,050 - SoundBot - INFO - Recommended tracks for 'funk': ['ME POSTOU NO DAILY - FESTA DO BIG G - MC GP', 'Posso Até Não Te Dar Flores - DJ Japa NK', 'FAMOSINHA - Dj Caio Vieira', 'Tô na Brasilia com o Zigão - DJ Zigão', 'Esquadrilha da Fumaça - Mc Jacaré']
+2025-11-09 01:09:37,419 - SoundBot - INFO - Context updated for user teste123
+2025-11-09 01:09:53,820 - SoundBot - INFO - New chat request from 127.0.0.1 | user_id=teste123 | message='Me recomenda outras agora'
+2025-11-09 01:09:53,820 - SoundBot - INFO - Processing message from user teste123: 'Me recomenda outras agora'
+2025-11-09 01:09:53,820 - SoundBot - INFO - Interpreting user request: 'Me recomenda outras agora'
+2025-11-09 01:09:54,125 - SoundBot - INFO - Successfully interpreted request: {'acao': 'recomendar', 'humor': 'animado', 'genero': None, 'artista': None, 'musica': 'outras músicas'}
+2025-11-09 01:09:54,125 - SoundBot - INFO - Interpreted intent: {'acao': 'recomendar', 'humor': 'animado', 'genero': None, 'artista': None, 'musica': 'outras músicas'}
+2025-11-09 01:09:54,125 - SoundBot - INFO - Recommending songs for mood: 'animado' or genre: 'None'
+2025-11-09 01:09:59,780 - SoundBot - INFO - Recommended tracks for 'funk': ['ME POSTOU NO DAILY - FESTA DO BIG G - MC GP', 'Posso Até Não Te Dar Flores - DJ Japa NK', 'FAMOSINHA - Dj Caio Vieira', 'Tô na Brasilia com o Zigão - DJ Zigão', 'Esquadrilha da Fumaça - Mc Jacaré']
+2025-11-09 01:10:00,221 - SoundBot - INFO - Context updated for user teste123
+2025-11-09 01:11:19,448 - SoundBot - INFO - New chat request from 127.0.0.1 | user_id=teste123 | message='Me recomenda outros agorai'
+2025-11-09 01:11:19,448 - SoundBot - INFO - Processing message from user teste123: 'Me recomenda outros agorai'
+2025-11-09 01:11:19,448 - SoundBot - INFO - Interpreting user request: 'Me recomenda outros agorai'
+2025-11-09 01:11:19,766 - SoundBot - INFO - Successfully interpreted request: {'acao': 'recomendar', 'humor': 'animado', 'genero': 'eletrônica', 'artista': 'Agorai', 'musica': 'Outros Agorai'}
+2025-11-09 01:11:19,766 - SoundBot - INFO - Interpreted intent: {'acao': 'recomendar', 'humor': 'animado', 'genero': 'eletrônica', 'artista': 'Agorai', 'musica': 'Outros Agorai'}
+2025-11-09 01:11:19,767 - SoundBot - INFO - Recommending songs for mood: 'animado' or genre: 'eletrônica'
+2025-11-09 01:11:27,668 - SoundBot - INFO - Recommended tracks for 'eletrônica': ['Tubarões - Ao Vivo - Diego & Victor Hugo', 'Baqueado - Ao Vivo - Panda', 'Dois Gumes - Ao Vivo - Felipe e Rodrigo', 'Sol Nos Olhos - Jorge & Mateus', 'Ilusão De Ótica - Ao Vivo - Matheus & Kauan']
+2025-11-09 01:11:28,029 - SoundBot - INFO - Context updated for user teste123
+2025-11-09 01:11:35,706 - SoundBot - INFO - New chat request from 127.0.0.1 | user_id=teste123 | message='Me recomenda outros funks agorai'
+2025-11-09 01:11:35,707 - SoundBot - INFO - Processing message from user teste123: 'Me recomenda outros funks agorai'
+2025-11-09 01:11:35,707 - SoundBot - INFO - Interpreting user request: 'Me recomenda outros funks agorai'
+2025-11-09 01:11:35,996 - SoundBot - INFO - Successfully interpreted request: {'acao': 'recomendar', 'humor': 'festa', 'genero': 'funk', 'artista': None, 'musica': None}
+2025-11-09 01:11:35,996 - SoundBot - INFO - Interpreted intent: {'acao': 'recomendar', 'humor': 'festa', 'genero': 'funk', 'artista': None, 'musica': None}
+2025-11-09 01:11:35,996 - SoundBot - INFO - Recommending songs for mood: 'festa' or genre: 'funk'
+2025-11-09 01:11:41,305 - SoundBot - INFO - Recommended tracks for 'funk': ['ME POSTOU NO DAILY - FESTA DO BIG G - MC GP', 'Posso Até Não Te Dar Flores - DJ Japa NK', 'FAMOSINHA - Dj Caio Vieira', 'Tô na Brasilia com o Zigão - DJ Zigão', 'Esquadrilha da Fumaça - Mc Jacaré']
+2025-11-09 01:11:41,696 - SoundBot - INFO - Context updated for user teste123
+2025-11-09 01:13:29,714 - SoundBot - INFO - AIService initialized with model llama-3.1-8b-instant
+2025-11-09 01:13:29,714 - SoundBot - INFO - Connected to Spotify
+2025-11-09 01:13:29,769 - SoundBot - INFO - SoundBot API started successfully
+2025-11-09 01:13:45,796 - SoundBot - INFO - AIService initialized with model llama-3.1-8b-instant
+2025-11-09 01:13:45,797 - SoundBot - INFO - Connected to Spotify
+2025-11-09 01:13:45,871 - SoundBot - INFO - SoundBot API started successfully
+2025-11-09 01:14:27,142 - SoundBot - INFO - AIService initialized with model llama-3.1-8b-instant
+2025-11-09 01:14:27,143 - SoundBot - INFO - Connected to Spotify
+2025-11-09 01:14:27,187 - SoundBot - INFO - SoundBot API started successfully
+2025-11-09 01:14:32,877 - SoundBot - INFO - New chat request from 127.0.0.1 | user_id=teste123 | message='Me recomenda outros funks agorai'
+2025-11-09 01:14:32,877 - SoundBot - INFO - Processing message from user teste123: 'Me recomenda outros funks agorai'
+2025-11-09 01:14:32,878 - SoundBot - INFO - Interpreting user request: 'Me recomenda outros funks agorai'
+2025-11-09 01:14:33,550 - SoundBot - INFO - Successfully interpreted request: {'acao': 'recomendar', 'humor': 'festa', 'genero': 'funk', 'musica': 'Funk Agora'}
+2025-11-09 01:14:33,550 - SoundBot - INFO - Interpreted intent: {'acao': 'recomendar', 'humor': 'festa', 'genero': 'funk', 'musica': 'Funk Agora'}
+2025-11-09 01:14:33,550 - SoundBot - INFO - Recommending songs for mood: 'festa' or genre: 'funk'
+2025-11-09 01:14:39,453 - SoundBot - INFO - Recommended tracks for 'funk': ['ME POSTOU NO DAILY - FESTA DO BIG G - MC GP', 'Posso Até Não Te Dar Flores - DJ Japa NK', 'FAMOSINHA - Dj Caio Vieira', 'Tô na Brasilia com o Zigão - DJ Zigão', 'Esquadrilha da Fumaça - Mc Jacaré']
+2025-11-09 01:14:39,875 - SoundBot - INFO - Context updated for user teste123
+2025-11-09 01:14:43,589 - SoundBot - INFO - New chat request from 127.0.0.1 | user_id=teste123 | message='Me recomenda outros funks agorai'
+2025-11-09 01:14:43,589 - SoundBot - INFO - Processing message from user teste123: 'Me recomenda outros funks agorai'
+2025-11-09 01:14:43,590 - SoundBot - INFO - Interpreting user request: 'Me recomenda outros funks agorai'
+2025-11-09 01:14:43,883 - SoundBot - INFO - Successfully interpreted request: {'acao': 'recomendar', 'humor': 'animado', 'genero': 'funk'}
+2025-11-09 01:14:43,883 - SoundBot - INFO - Interpreted intent: {'acao': 'recomendar', 'humor': 'animado', 'genero': 'funk'}
+2025-11-09 01:14:43,883 - SoundBot - INFO - Recommending songs for mood: 'animado' or genre: 'funk'
+2025-11-09 01:14:49,875 - SoundBot - INFO - Recommended tracks for 'funk': ['ME POSTOU NO DAILY - FESTA DO BIG G - MC GP', 'Posso Até Não Te Dar Flores - DJ Japa NK', 'FAMOSINHA - Dj Caio Vieira', 'Tô na Brasilia com o Zigão - DJ Zigão', 'Esquadrilha da Fumaça - Mc Jacaré']
+2025-11-09 01:14:49,877 - SoundBot - INFO - No new recommendations for user teste123, repeating previous ones
+2025-11-09 01:14:50,369 - SoundBot - INFO - Context updated for user teste123
+2025-11-09 01:14:58,010 - SoundBot - INFO - New chat request from 127.0.0.1 | user_id=teste123 | message='Me recomenda outros funks agorai'
+2025-11-09 01:14:58,011 - SoundBot - INFO - Processing message from user teste123: 'Me recomenda outros funks agorai'
+2025-11-09 01:14:58,011 - SoundBot - INFO - Interpreting user request: 'Me recomenda outros funks agorai'
+2025-11-09 01:14:58,309 - SoundBot - INFO - Successfully interpreted request: {'acao': 'recomendar', 'humor': 'animado', 'genero': 'funk', 'musica': 'Outros Funks Agora'}
+2025-11-09 01:14:58,309 - SoundBot - INFO - Interpreted intent: {'acao': 'recomendar', 'humor': 'animado', 'genero': 'funk', 'musica': 'Outros Funks Agora'}
+2025-11-09 01:14:58,310 - SoundBot - INFO - Recommending songs for mood: 'animado' or genre: 'funk'
+2025-11-09 01:15:04,164 - SoundBot - INFO - Recommended tracks for 'funk': ['ME POSTOU NO DAILY - FESTA DO BIG G - MC GP', 'Posso Até Não Te Dar Flores - DJ Japa NK', 'FAMOSINHA - Dj Caio Vieira', 'Tô na Brasilia com o Zigão - DJ Zigão', 'Esquadrilha da Fumaça - Mc Jacaré']
+2025-11-09 01:15:04,166 - SoundBot - INFO - No new recommendations for user teste123, repeating previous ones
+2025-11-09 01:15:04,592 - SoundBot - INFO - Context updated for user teste123
+2025-11-09 01:15:08,476 - SoundBot - INFO - New chat request from 127.0.0.1 | user_id=teste123 | message='Me recomenda outros funks agorai'
+2025-11-09 01:15:08,476 - SoundBot - INFO - Processing message from user teste123: 'Me recomenda outros funks agorai'
+2025-11-09 01:15:08,476 - SoundBot - INFO - Interpreting user request: 'Me recomenda outros funks agorai'
+2025-11-09 01:15:08,750 - SoundBot - INFO - Successfully interpreted request: {'acao': 'recomendar', 'humor': 'festa', 'genero': 'funk', 'artista': 'Seu Jorge', 'musica': 'Fim do Mundo'}
+2025-11-09 01:15:08,751 - SoundBot - INFO - Interpreted intent: {'acao': 'recomendar', 'humor': 'festa', 'genero': 'funk', 'artista': 'Seu Jorge', 'musica': 'Fim do Mundo'}
+2025-11-09 01:15:08,751 - SoundBot - INFO - Recommending songs for mood: 'festa' or genre: 'funk'
+2025-11-09 01:15:15,014 - SoundBot - INFO - Recommended tracks for 'funk': ['ME POSTOU NO DAILY - FESTA DO BIG G - MC GP', 'Posso Até Não Te Dar Flores - DJ Japa NK', 'FAMOSINHA - Dj Caio Vieira', 'Tô na Brasilia com o Zigão - DJ Zigão', 'Esquadrilha da Fumaça - Mc Jacaré']
+2025-11-09 01:15:15,016 - SoundBot - INFO - No new recommendations for user teste123, repeating previous ones
+2025-11-09 01:15:15,474 - SoundBot - INFO - Context updated for user teste123
+2025-11-09 01:19:13,870 - SoundBot - INFO - AIService initialized with model llama-3.1-8b-instant
+2025-11-09 01:19:13,870 - SoundBot - INFO - Connected to Spotify
+2025-11-09 01:19:13,916 - SoundBot - INFO - SoundBot API started successfully
+2025-11-09 01:19:20,901 - SoundBot - INFO - AIService initialized with model llama-3.1-8b-instant
+2025-11-09 01:19:20,901 - SoundBot - INFO - Connected to Spotify
+2025-11-09 01:19:20,946 - SoundBot - INFO - SoundBot API started successfully
+2025-11-09 01:19:23,698 - SoundBot - INFO - AIService initialized with model llama-3.1-8b-instant
+2025-11-09 01:19:23,699 - SoundBot - INFO - Connected to Spotify
+2025-11-09 01:19:23,772 - SoundBot - INFO - SoundBot API started successfully
+2025-11-09 01:19:33,104 - SoundBot - INFO - AIService initialized with model llama-3.1-8b-instant
+2025-11-09 01:19:33,104 - SoundBot - INFO - Connected to Spotify
+2025-11-09 01:19:33,145 - SoundBot - INFO - SoundBot API started successfully
+2025-11-09 01:19:51,635 - SoundBot - INFO - New chat request from 127.0.0.1 | user_id=teste123 | message='Me recomenda uns pagodes para ouvir'
+2025-11-09 01:19:51,636 - SoundBot - INFO - Processing message from user teste123: 'Me recomenda uns pagodes para ouvir'
+2025-11-09 01:19:51,636 - SoundBot - INFO - Interpreting user request: 'Me recomenda uns pagodes para ouvir'
+2025-11-09 01:19:52,016 - SoundBot - INFO - Successfully interpreted request: {'acao': 'recomendar', 'humor': 'festa', 'genero': 'pagode', 'artista': 'Ed Motta', 'musica': 'O Pagode'}
+2025-11-09 01:19:52,017 - SoundBot - INFO - Interpreted intent: {'acao': 'recomendar', 'humor': 'festa', 'genero': 'pagode', 'artista': 'Ed Motta', 'musica': 'O Pagode'}
+2025-11-09 01:19:59,673 - SoundBot - INFO - Recommended tracks for 'pagode' (filtered/shuffled): ['Péssimo Negócio (Ao Vivo) - Dilsinho', 'Quando é Amor / Dói Demais / Depois do Prazer - Ao Vivo - Sorriso Maroto', 'Apaixonado Raiz (Tututu) - Ao Vivo - Turma do Pagode', 'É Tarde Demais / Estou Mal - Ao Vivo - Sorriso Maroto', 'P do Pecado - Ao Vivo - Grupo Menos É Mais']
+2025-11-09 01:20:00,115 - SoundBot - INFO - Context updated for user teste123
+2025-11-09 01:20:11,320 - SoundBot - INFO - New chat request from 127.0.0.1 | user_id=teste123 | message='Me recomenda agora outros pagodes'
+2025-11-09 01:20:11,320 - SoundBot - INFO - Processing message from user teste123: 'Me recomenda agora outros pagodes'
+2025-11-09 01:20:11,320 - SoundBot - INFO - Interpreting user request: 'Me recomenda agora outros pagodes'
+2025-11-09 01:20:11,616 - SoundBot - INFO - Successfully interpreted request: {'acao': 'recomendar', 'humor': None, 'genero': 'pagode', 'artista': None, 'musica': None}
+2025-11-09 01:20:11,616 - SoundBot - INFO - Interpreted intent: {'acao': 'recomendar', 'humor': None, 'genero': 'pagode', 'artista': None, 'musica': None}
+2025-11-09 01:20:18,836 - SoundBot - INFO - Recommended tracks for 'pagode' (filtered/shuffled): ['Reinventar / Pra Ver o Sol Brilhar - Ao Vivo - Belo', 'Duvido - Ao Vivo - Turma do Pagode', 'Primeira Noite - Pixote', 'Adorei - Grupo Menos É Mais', 'Pela Última Vez - Ao Vivo - Grupo Menos É Mais']
+2025-11-09 01:20:19,279 - SoundBot - INFO - Context updated for user teste123
+2025-11-09 01:20:39,912 - SoundBot - INFO - AIService initialized with model llama-3.1-8b-instant
+2025-11-09 01:20:39,912 - SoundBot - INFO - Connected to Spotify
+2025-11-09 01:20:39,979 - SoundBot - INFO - SoundBot API started successfully
+2025-11-09 01:20:43,227 - SoundBot - INFO - AIService initialized with model llama-3.1-8b-instant
+2025-11-09 01:20:43,228 - SoundBot - INFO - Connected to Spotify
+2025-11-09 01:20:43,270 - SoundBot - INFO - SoundBot API started successfully
+2025-11-09 01:20:57,307 - SoundBot - INFO - AIService initialized with model llama-3.1-8b-instant
+2025-11-09 01:20:57,307 - SoundBot - INFO - Connected to Spotify
+2025-11-09 01:20:57,348 - SoundBot - INFO - SoundBot API started successfully
+2025-11-09 01:21:18,947 - SoundBot - INFO - New chat request from 127.0.0.1 | user_id=teste123 | message='Me recomenda agora outros pagodes'
+2025-11-09 01:21:18,948 - SoundBot - INFO - Processing message from user teste123: 'Me recomenda agora outros pagodes'
+2025-11-09 01:21:18,948 - SoundBot - INFO - Interpreting user request: 'Me recomenda agora outros pagodes'
+2025-11-09 01:21:19,314 - SoundBot - INFO - Successfully interpreted request: {'acao': 'recomendar', 'humor': None, 'genero': 'pagode', 'artista': None, 'musica': None}
+2025-11-09 01:21:19,314 - SoundBot - INFO - Interpreted intent: {'acao': 'recomendar', 'humor': None, 'genero': 'pagode', 'artista': None, 'musica': None}
+2025-11-09 01:21:26,923 - SoundBot - INFO - Recommended tracks for 'pagode' (filtered/shuffled): ['Bebe e Vem Me Procurar / Quem Ama Sente Saudade (Ao Vivo) - Turma do Pagode', 'Coração Partido (Corazón Partío) - Ao Vivo - Grupo Menos É Mais', 'Meu Jeito de Amar / Final de Tarde - Ao Vivo - Vitor Limma', 'Apagar (Fundo Raso) - Ferrugem', 'Não Sou Mais - Ao Vivo - Kamisa 10']
+2025-11-09 01:21:27,375 - SoundBot - INFO - Context updated for user teste123
