@@ -21,29 +21,30 @@ class ChatController:
         artist = intent.get("artista")
         song = intent.get("musica")
 
-        reply = ""
         recommendations = []
+        reply = ""
 
         try:
             if action == "buscar_musica" and song:
                 logger.info(f"Searching for track: '{song}'")
                 recommendations = spotify_service.search_track(song) or []
-                reply = f"Encontrei algumas músicas que correspondem a '{song}':"
-
+                context = f"O usuário pediu para buscar a música '{song}'."
+            
             elif action == "buscar_artista" and artist:
                 logger.info(f"Searching for artist: '{artist}'")
                 recommendations = spotify_service.search_track(f"artist:{artist}") or []
-                reply = f"Encontrei algumas músicas do artista '{artist}':"
+                context = f"O usuário pediu para ver músicas do artista '{artist}'."
 
             elif action == "recomendar" and mood:
                 logger.info(f"Recommending songs for mood: '{mood}'")
                 recommendations = spotify_service.recommend_by_mood(mood) or []
-                reply = f"Essas músicas combinam com um humor {mood}:"
-                
+                context = f"O usuário quer recomendações de músicas para um humor {mood}."
+
             else:
                 logger.warning(f"Unrecognized request intent for message: '{message}'")
-                reply = "Desculpe, não entendi muito bem seu pedido."
-                recommendations = []
+                context = "O pedido do usuário não foi claramente compreendido."
+
+            reply = ai_service.generate_reply(context, recommendations, mood, artist, song)
 
         except Exception as e:
             logger.error(f"Error in ChatController for user {user_id}: {e}", exc_info=True)

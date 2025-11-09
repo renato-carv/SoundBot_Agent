@@ -10,7 +10,7 @@ app.include_router(chat_router)
 
 @app.on_event("startup")
 async def startup_event():
-    logger.info("🚀 SoundBot API started successfully")
+    logger.info("SoundBot API started successfully")
 
 @app.get("/health")
 async def health():
